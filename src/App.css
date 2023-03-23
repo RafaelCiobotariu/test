@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.app {
+body {
   background-color: #f8f9fa;
+}
+
+.app {
+  /* background-color: #f8f9fa; */
   height: 100%;
   font-family: 'Roboto', sans-serif;
 }
@@ -71,6 +75,7 @@
   border: 1px solid;
   padding: 10px;
   box-shadow: 3px 3px #b9b9b9;
+  align-items: center;
 }
 
 .card-photo {
@@ -359,7 +364,7 @@
 /*  ####################     width 1500 px    ############## */
 
 
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1330px) and (min-width: 1050px) {
 
   /* ############## MAIN PORTOFOLIO ############## */
 
@@ -378,9 +383,8 @@
   }
 
   .link-to-site-button {
-    padding: 25px;
-    margin-left: 35px;
-    margin-bottom: 25px;
+    padding: 10px;
+    margin-bottom: 30px;
     font-size: 20px;
   }
 
@@ -392,10 +396,10 @@
 
   .back-to-top {
     bottom: 40px;
-    right: 50px;
-    margin-right: 10px;
-    padding: 25px;
-    font-size: 24px;
+    right: 10px;
+    margin-right: 5px;
+    padding: 20px;
+    font-size: 20px;
   }
 
 
@@ -472,7 +476,79 @@
 }
 
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1050px) and (min-width: 900px) {
+
+  .site-logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    padding-left: 0;
+    font-size: 22px;
+  }
+
+  .header {
+    padding-bottom: 10px;
+  }
+
+  /* ############## MAIN PORTOFOLIO ############## */
+
+  .grid-display {
+    justify-content: center;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-auto-rows: 460px;
+    gap: 100px;
+  }
+
+  .link-to-site-button {
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .edit-button {
+    padding: 15px;
+    font-size: 18px;
+
+  }
+
+  .back-to-top {
+    bottom: 40px;
+    right: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+
+  /* ############# PAGE ADD NEW ############### */
+  .add-new-form label {
+    font-size: 24px;
+  }
+
+  .add-new-form input,
+  .add-new-form select {
+    padding: 21px 10px;
+    font-size: 20px;
+  }
+
+  .add-new-form,
+  .add-new-form button {
+    font-size: 30px;
+    padding: 21px;
+
+  }
+
+  .add-new-form button {
+    background-color: #0ca421;
+    margin-right: 0;
+  }
+
+  .add-new-form .back-button {
+    margin-left: 30px;
+  }
 
   /* ############## PAGE SEE MORE ################ */
 
@@ -518,6 +594,20 @@
 /*  ###################  MAX WIDHT 900 px ################### */
 
 @media only screen and (max-width: 900px) and (min-width: 850px) {
+
+  .header {
+    padding-bottom: 10px;
+  }
+
+  .site-logo {
+    font-size: 18px;
+    width: 200px;
+  }
+
+  .nav-links {
+    font-size: 18px;
+  }
+
   .grid-display {
     justify-content: center;
     padding: 50px;
@@ -541,16 +631,8 @@
   }
 
   .link-to-site-button {
-    display: block;
-    margin: 20px 20px 20px 55px;
-    color: #eeeeef;
-    background: #4b4f58;
-    width: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    text-decoration: none;
-    cursor: pointer;
+    margin: 30px 0;
+    width: 190px;
   }
 
   /* ############## PAGE SEE MORE ################ */
@@ -680,7 +762,6 @@
     border: 1px solid;
     padding: 10px;
     box-shadow: 3px 3px #b9b9b9;
-    /* width: 230px; */
   }
 
   .card-photo {
@@ -691,12 +772,13 @@
   .link-to-site-button {
     font-size: 15px;
     padding: 10px;
-    margin-left: 45px;
+    margin-left: 15px;
+    width: 150px;
   }
 
   .edit-button {
     padding: 10px;
-    font-size: 15px;
+    font-size: 5px;
   }
 
   .back-to-top {
@@ -704,7 +786,7 @@
     right: 0px;
     margin-right: 5px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .add-new-form .back-button {
@@ -794,5 +876,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .site-logo {
+    padding: 0;
+    margin-left: 10px;
+    transform: translateX(calc(50vh - 48vh));
+  }
+
+  .header {
+    width: calc(100vw - 10px);
+  }
+
+  .add-new-form input,
+  .add-new-form select {
+    width: 90%;
+    margin-left: 5px;
+  }
+
+  .add-new-form label {
+    margin-left: 15px;
   }
 }

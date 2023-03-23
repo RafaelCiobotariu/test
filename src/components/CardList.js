@@ -9,7 +9,7 @@ const CardList = ({ projects }) => {
                         <h3>{project.title}</h3>
                         <img src={project.images} className="card-photo" />
                         <Link to={project.link} className="link-to-site-button" target="_blank">See site</Link>
-                        <Link to={`/projects/${project.id}`} className="edit-button links"> See more</Link>
+                        <Link to={`/projects/${project.id}`} className="edit-button links"> See details</Link>
                     </div>
                 )
             } else {
