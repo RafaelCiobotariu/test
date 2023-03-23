@@ -464,6 +464,10 @@
     display: block;
   }
 
+  .buttons-edit.back-button {
+    display: flex;
+    justify-content: center;
+  }
 
 }
 
@@ -513,7 +517,7 @@
 
 /*  ###################  MAX WIDHT 900 px ################### */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width: 850px) {
   .grid-display {
     justify-content: center;
     padding: 50px;
@@ -593,11 +597,27 @@
     display: block;
   }
 
+  .buttons-edit .back-button {
+    width: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons-edit .back-button {
+    width: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
+/*  ################### max-widht 850 px ##################### */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
 
   .nav-links {
     visibility: hidden;
@@ -771,5 +791,8 @@
   .buttons-edit .back-button {
     width: 200px;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
