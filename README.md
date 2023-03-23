@@ -6,4 +6,4 @@ To start start the application, first you need to start the json server, and aft
 
 <b>Main problems </b> : if you hide an entry, you can't see it in the portofolio, so you can't unhide it ( you can do it only trough data base edit ) 
 <br />
-If you want to edit an entry, if you don't type at least a space in every input, the value won't update, so it will send an empty object back.
+If you want to edit an entry, if you don't type at least a space in every input, the value won't update, so it will send an empty object back, so you will update the specific object with an empty one.
